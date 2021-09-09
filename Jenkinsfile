@@ -5,6 +5,7 @@ pipeline {
             steps {
                 sh 'whoami'
                 sh 'sudo docker ps -a'
+                sh 'docker start hello-world'
             }
         }
     }
