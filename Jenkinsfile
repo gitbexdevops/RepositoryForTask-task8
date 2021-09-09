@@ -1,10 +1,11 @@
 pipeline {
- agent any
-  agent {
-    docker { start dreamy_clarke }
-  }
+ agent { label 'agent'}
   stages {
-    stage('Test') {
+    agent {
+     stage('Test') {
+      agent {
+         docker { start dreamy_clarke }
+        } 
       steps {
         sh 'docker ps'
       }
