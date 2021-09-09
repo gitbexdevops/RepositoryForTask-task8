@@ -1,11 +1,9 @@
 pipeline {
-  agent { label 'agent'}
-  stages {
-    stage('Back-end') {
+  agent any
+    stage('execute') {
       agent {
         docker { start dreamy_clarke }
       }
       
     }
-  }
 }
