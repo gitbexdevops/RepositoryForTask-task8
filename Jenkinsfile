@@ -4,8 +4,8 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'whoami'
-                sh 'sudo docker ps -a'
-                sh 'sudo docker start dreamy_clarke'
+                sh 'sudo docker start a3fbca43917d'
+                sh 'sudo docker start 85d5f9bd5273'
             }
         }
     }
