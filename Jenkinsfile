@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh 'whoami'
                 sh 'sudo docker ps -a'
-                sh 'sudo docker start 305c80ff7f9c'
+                sh 'sudo docker start dreamy_clarke'
             }
         }
     }
