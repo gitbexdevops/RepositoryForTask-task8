@@ -4,7 +4,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'whoami'
-                sh 'docker ps -a'
+                sh 'sudo docker ps -a'
             }
         }
     }
