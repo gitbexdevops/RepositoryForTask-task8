@@ -3,8 +3,8 @@ pipeline {
   stages {
         stage('Test') {
             steps {
-                sh 'sudo docker start a3fbca43917d'
-                sh 'sudo docker start 85d5f9bd5273'
+                sh 'sudo docker start 8baf1509bc02'
+                sh 'sudo docker start a21c487533aa'
             }
         }
     }
